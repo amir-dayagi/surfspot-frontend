@@ -7,18 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2936B9912BDC366A00313FFC /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2936B9902BDC366A00313FFC /* Spot.swift */; };
+		2936B9932BDC773900313FFC /* SpotRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2936B9922BDC773900313FFC /* SpotRequest.swift */; };
+		2936B9952BDC779C00313FFC /* SpotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2936B9942BDC779C00313FFC /* SpotsService.swift */; };
+		2938E63D2BD8986C00F2DCEF /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938E63C2BD8986C00F2DCEF /* LoginRequest.swift */; };
+		2938E6462BD89B9A00F2DCEF /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938E6452BD89B9A00F2DCEF /* Auth.swift */; };
+		2938E6492BD8A43E00F2DCEF /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 2938E6482BD8A43E00F2DCEF /* SwiftKeychainWrapper */; };
 		2996E5EA2BB0F476001CE906 /* SurfspotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2996E5E92BB0F476001CE906 /* SurfspotApp.swift */; };
 		2996E5EC2BB0F476001CE906 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2996E5EB2BB0F476001CE906 /* ContentView.swift */; };
 		2996E5EE2BB0F478001CE906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2996E5ED2BB0F478001CE906 /* Assets.xcassets */; };
 		2996E5F12BB0F478001CE906 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2996E5F02BB0F478001CE906 /* Preview Assets.xcassets */; };
+		2996E6032BB0F745001CE906 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2996E6022BB0F745001CE906 /* AuthService.swift */; };
+		2996E6072BB0F7CB001CE906 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2996E6062BB0F7CB001CE906 /* LoginView.swift */; };
+		2996E6092BB0F7D7001CE906 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2996E6082BB0F7D7001CE906 /* SignupView.swift */; };
+		29C3135A2BDF297B00322ECF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C313592BDF297B00322ECF /* User.swift */; };
+		29C3135C2BDF2DF900322ECF /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C3135B2BDF2DF900322ECF /* UsersService.swift */; };
+		29D75A482BF189A100A5FF19 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D75A472BF189A100A5FF19 /* HomeView.swift */; };
+		29D75A4A2BF1A4A800A5FF19 /* SessionInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D75A492BF1A4A800A5FF19 /* SessionInfoView.swift */; };
+		29FA6F412BD8AE0100AAB504 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA6F402BD8AE0100AAB504 /* SessionView.swift */; };
+		29FA6F432BD8AE2300AAB504 /* SessionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA6F422BD8AE2300AAB504 /* SessionsService.swift */; };
+		29FA6F462BD8AF4900AAB504 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA6F452BD8AF4900AAB504 /* Session.swift */; };
+		29FA6F482BD8B08300AAB504 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA6F472BD8B08300AAB504 /* HomeModel.swift */; };
+		29FA6F4C2BD8B70700AAB504 /* SessionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA6F4B2BD8B70700AAB504 /* SessionRequest.swift */; };
+		29FA6F522BD8BA5900AAB504 /* CreateSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA6F512BD8BA5900AAB504 /* CreateSessionView.swift */; };
+		29FA6F612BD8BCBC00AAB504 /* SignupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA6F5E2BD8BCBB00AAB504 /* SignupRequest.swift */; };
+		29FA6F632BD8BCBC00AAB504 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA6F602BD8BCBC00AAB504 /* LoginResponse.swift */; };
+		29FA6F672BD8BD0600AAB504 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA6F662BD8BD0600AAB504 /* LoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2936B9902BDC366A00313FFC /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		2936B9922BDC773900313FFC /* SpotRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotRequest.swift; sourceTree = "<group>"; };
+		2936B9942BDC779C00313FFC /* SpotsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsService.swift; sourceTree = "<group>"; };
+		2938E63C2BD8986C00F2DCEF /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		2938E6452BD89B9A00F2DCEF /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		2996E5E62BB0F476001CE906 /* Surfspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surfspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2996E5E92BB0F476001CE906 /* SurfspotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfspotApp.swift; sourceTree = "<group>"; };
 		2996E5EB2BB0F476001CE906 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2996E5ED2BB0F478001CE906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2996E5F02BB0F478001CE906 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2996E6022BB0F745001CE906 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2996E6062BB0F7CB001CE906 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2996E6082BB0F7D7001CE906 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		29C313592BDF297B00322ECF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		29C3135B2BDF2DF900322ECF /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
+		29D75A472BF189A100A5FF19 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		29D75A492BF1A4A800A5FF19 /* SessionInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInfoView.swift; sourceTree = "<group>"; };
+		29FA6F402BD8AE0100AAB504 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		29FA6F422BD8AE2300AAB504 /* SessionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsService.swift; sourceTree = "<group>"; };
+		29FA6F452BD8AF4900AAB504 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		29FA6F472BD8B08300AAB504 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		29FA6F4B2BD8B70700AAB504 /* SessionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRequest.swift; sourceTree = "<group>"; };
+		29FA6F512BD8BA5900AAB504 /* CreateSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionView.swift; sourceTree = "<group>"; };
+		29FA6F5E2BD8BCBB00AAB504 /* SignupRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupRequest.swift; sourceTree = "<group>"; };
+		29FA6F602BD8BCBC00AAB504 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		29FA6F662BD8BD0600AAB504 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +69,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2938E6492BD8A43E00F2DCEF /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2938E63B2BD8985C00F2DCEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2938E63C2BD8986C00F2DCEF /* LoginRequest.swift */,
+				29FA6F602BD8BCBC00AAB504 /* LoginResponse.swift */,
+				29FA6F5E2BD8BCBB00AAB504 /* SignupRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2996E5DD2BB0F476001CE906 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +105,9 @@
 		2996E5E82BB0F476001CE906 /* Surfspot */ = {
 			isa = PBXGroup;
 			children = (
-				2996E5E92BB0F476001CE906 /* SurfspotApp.swift */,
-				2996E5EB2BB0F476001CE906 /* ContentView.swift */,
-				2996E5ED2BB0F478001CE906 /* Assets.xcassets */,
+				2996E5F92BB0F5DF001CE906 /* Source */,
+				2996E5F82BB0F5CE001CE906 /* Resources */,
+				2996E5F72BB0F5A7001CE906 /* App */,
 				2996E5EF2BB0F478001CE906 /* Preview Content */,
 			);
 			path = Surfspot;
@@ -65,6 +119,105 @@
 				2996E5F02BB0F478001CE906 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2996E5F72BB0F5A7001CE906 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2996E5E92BB0F476001CE906 /* SurfspotApp.swift */,
+				2996E5EB2BB0F476001CE906 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2996E5F82BB0F5CE001CE906 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2996E5ED2BB0F478001CE906 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2996E5F92BB0F5DF001CE906 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2996E5FB2BB0F65B001CE906 /* Utils */,
+				2996E5FA2BB0F654001CE906 /* Features */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2996E5FA2BB0F654001CE906 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				29FA6F3C2BD8ADBD00AAB504 /* Home */,
+				2996E5FC2BB0F661001CE906 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2996E5FB2BB0F65B001CE906 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2938E6452BD89B9A00F2DCEF /* Auth.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2996E5FC2BB0F661001CE906 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2938E63B2BD8985C00F2DCEF /* Models */,
+				2996E5FF2BB0F68C001CE906 /* Views */,
+				2996E6022BB0F745001CE906 /* AuthService.swift */,
+				29FA6F662BD8BD0600AAB504 /* LoginModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2996E5FF2BB0F68C001CE906 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2996E6062BB0F7CB001CE906 /* LoginView.swift */,
+				2996E6082BB0F7D7001CE906 /* SignupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		29D75A452BF1890B00A5FF19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29FA6F452BD8AF4900AAB504 /* Session.swift */,
+				29FA6F4B2BD8B70700AAB504 /* SessionRequest.swift */,
+				2936B9902BDC366A00313FFC /* Spot.swift */,
+				2936B9922BDC773900313FFC /* SpotRequest.swift */,
+				29C313592BDF297B00322ECF /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29D75A462BF1895200A5FF19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29FA6F512BD8BA5900AAB504 /* CreateSessionView.swift */,
+				29FA6F402BD8AE0100AAB504 /* SessionView.swift */,
+				29D75A472BF189A100A5FF19 /* HomeView.swift */,
+				29D75A492BF1A4A800A5FF19 /* SessionInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		29FA6F3C2BD8ADBD00AAB504 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				29D75A462BF1895200A5FF19 /* Views */,
+				29D75A452BF1890B00A5FF19 /* Models */,
+				29FA6F472BD8B08300AAB504 /* HomeModel.swift */,
+				29FA6F422BD8AE2300AAB504 /* SessionsService.swift */,
+				2936B9942BDC779C00313FFC /* SpotsService.swift */,
+				29C3135B2BDF2DF900322ECF /* UsersService.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +236,9 @@
 			dependencies = (
 			);
 			name = Surfspot;
+			packageProductDependencies = (
+				2938E6482BD8A43E00F2DCEF /* SwiftKeychainWrapper */,
+			);
 			productName = Surfspot;
 			productReference = 2996E5E62BB0F476001CE906 /* Surfspot.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +267,9 @@
 				Base,
 			);
 			mainGroup = 2996E5DD2BB0F476001CE906;
+			packageReferences = (
+				2938E6472BD8A43E00F2DCEF /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = 2996E5E72BB0F476001CE906 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +296,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C3135C2BDF2DF900322ECF /* UsersService.swift in Sources */,
+				29FA6F672BD8BD0600AAB504 /* LoginModel.swift in Sources */,
+				29D75A4A2BF1A4A800A5FF19 /* SessionInfoView.swift in Sources */,
+				2996E6092BB0F7D7001CE906 /* SignupView.swift in Sources */,
+				2996E6072BB0F7CB001CE906 /* LoginView.swift in Sources */,
+				29FA6F4C2BD8B70700AAB504 /* SessionRequest.swift in Sources */,
+				29FA6F482BD8B08300AAB504 /* HomeModel.swift in Sources */,
+				29FA6F432BD8AE2300AAB504 /* SessionsService.swift in Sources */,
+				29FA6F462BD8AF4900AAB504 /* Session.swift in Sources */,
+				2936B9912BDC366A00313FFC /* Spot.swift in Sources */,
 				2996E5EC2BB0F476001CE906 /* ContentView.swift in Sources */,
+				29FA6F412BD8AE0100AAB504 /* SessionView.swift in Sources */,
+				2936B9932BDC773900313FFC /* SpotRequest.swift in Sources */,
+				2938E6462BD89B9A00F2DCEF /* Auth.swift in Sources */,
+				29FA6F612BD8BCBC00AAB504 /* SignupRequest.swift in Sources */,
 				2996E5EA2BB0F476001CE906 /* SurfspotApp.swift in Sources */,
+				2996E6032BB0F745001CE906 /* AuthService.swift in Sources */,
+				2936B9952BDC779C00313FFC /* SpotsService.swift in Sources */,
+				29FA6F522BD8BA5900AAB504 /* CreateSessionView.swift in Sources */,
+				29FA6F632BD8BCBC00AAB504 /* LoginResponse.swift in Sources */,
+				29D75A482BF189A100A5FF19 /* HomeView.swift in Sources */,
+				2938E63D2BD8986C00F2DCEF /* LoginRequest.swift in Sources */,
+				29C3135A2BDF297B00322ECF /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +522,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2938E6472BD8A43E00F2DCEF /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2938E6482BD8A43E00F2DCEF /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2938E6472BD8A43E00F2DCEF /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2996E5DE2BB0F476001CE906 /* Project object */;
 }
