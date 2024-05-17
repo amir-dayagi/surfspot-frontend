@@ -30,6 +30,7 @@ class UsersService {
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
+        request.setValue("Bearer \(Auth.shared.getToken()!)", forHTTPHeaderField: "Authorization")
 
         let (data, _) = try await URLSession.shared.data(for: request)
 

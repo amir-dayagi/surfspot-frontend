@@ -54,4 +54,29 @@ class SessionsService {
         decoder.dateDecodingStrategy = .iso8601
         return try decoder.decode(Session.self, from: data)
     }
+    
+    func addUser(sessionId: Int, addedUserId: Int) async throws {
+        guard let url = URL(string: "/sessions/\(sessionId)/add-user/\(addedUserId)", relativeTo: baseURL) else {
+            throw SessionsServiceError.badURL
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "PATCH"
+        request.setValue("Bearer \(Auth.shared.getToken()!)", forHTTPHeaderField: "Authorization")
+    
+        let _ = try await URLSession.shared.data(for: request)
+    }
+    
+    func getSessionUsers(sessionId: Int) async throws -> [User] {
+        guard let url = URL(string: "/sessions/\(sessionId)/users", relativeTo: baseURL) else {
+            throw SessionsServiceError.badURL
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.setValue("Bearer \(Auth.shared.getToken()!)", forHTTPHeaderField: "Authorization")
+    
+        let (data, _) = try await URLSession.shared.data(for: request)
+        return try JSONDecoder().decode([User].self, from: data)
+    }
 }

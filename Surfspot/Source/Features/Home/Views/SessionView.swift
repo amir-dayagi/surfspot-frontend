@@ -27,13 +27,21 @@ struct SessionView: View {
     }
     
     var body: some View {
-        Text(session.name)
-        
-        Map(initialPosition: getSessionSpotInitialPosition()) {
-            getSessionSpotCircle()
-                .stroke(.black.opacity(0.6), lineWidth: 5)
-                .foregroundStyle(.red.opacity(0.6))
+        NavigationStack {
+            NavigationLink {
+                SessionInfoView(session: session)
+            } label: {
+                Text(session.name)
+            }
+            
+            Map(initialPosition: getSessionSpotInitialPosition()) {
+                getSessionSpotCircle()
+                    .stroke(.black.opacity(0.6), lineWidth: 5)
+                    .foregroundStyle(.red.opacity(0.6))
+            }
         }
+        
+        
     }
 }
 

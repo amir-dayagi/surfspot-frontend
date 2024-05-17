@@ -10,7 +10,7 @@ import MapKit
 
 struct CreateSessionView: View {
     @EnvironmentObject var homeModel: HomeModel
-    @Binding var showingCreatePopover: Bool
+    @Environment(\.dismiss) var dismiss
     
     @State var name = ""
     @State var start_datetime = Date()
@@ -65,7 +65,7 @@ struct CreateSessionView: View {
         Button("Create!") {
             Task {
                 await homeModel.createSession(name, start_datetime, getSpotRequest())
-                showingCreatePopover = false
+                dismiss()
             }
         }
     }

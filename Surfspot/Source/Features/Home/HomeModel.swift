@@ -9,7 +9,6 @@ import Foundation
 
 class HomeModel: ObservableObject {
     @Published var sessions: [Session] = []
-    @Published var users: [User] = []
     
     let sessionsService: SessionsService
     let spotsService: SpotsService
@@ -49,14 +48,33 @@ class HomeModel: ObservableObject {
         } catch {
             print("\(error)")
         }
-        
     }
     
-    func searchUsers(_ searchQuery: String) async {
+    func addUserToSession(sessionId: Int, addedUserId: Int) async -> Bool {
         do {
-            self.users = try await usersService.getUsers(searchQuery)
+            try await sessionsService.addUser(sessionId: sessionId, addedUserId: addedUserId)
+            return true
         } catch {
             print("\(error)")
+            return false
+        }
+    }
+    
+    func getUsers(from: Session) async -> [User] {
+        do {
+            return try await sessionsService.getSessionUsers(sessionId: from.id)
+        } catch {
+            print("\(error)")
+            return []
+        }
+    }
+    
+    func searchUsers(_ searchQuery: String) async -> [User] {
+        do {
+            return try await usersService.getUsers(searchQuery)
+        } catch {
+            print("\(error)")
+            return []
         }
     }
 }

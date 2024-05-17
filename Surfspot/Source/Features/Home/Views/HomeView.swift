@@ -11,8 +11,6 @@ struct HomeView: View {
     @EnvironmentObject var homeModel: HomeModel
     @EnvironmentObject var auth: Auth
     
-    @State var showingCreatePopover = false
-    
     var body: some View {
         NavigationStack {
             HStack {
@@ -22,13 +20,10 @@ struct HomeView: View {
                 
                 Spacer()
                 
-                Button {
-                    showingCreatePopover = true
+                NavigationLink {
+                    CreateSessionView()
                 } label: {
                     Image(systemName: "plus")
-                }
-                .popover(isPresented: $showingCreatePopover) {
-                    CreateSessionView(showingCreatePopover: $showingCreatePopover)
                 }
             }
             
