@@ -18,14 +18,20 @@ class Auth: ObservableObject {
     }
     
     
-    func setToken(token: String) {
+    func setToken(token: String, exp: String) {
         KeychainWrapper.standard.set(token, forKey: "token")
+        KeychainWrapper.standard.set(exp, forKey: "exp")
         
         loggedIn = true
     }
     
     func hasToken() -> Bool {
-        return KeychainWrapper.standard.string(forKey: "token") != nil
+        if KeychainWrapper.standard.string(forKey: "token") == nil ||
+            KeychainWrapper.standard.string(forKey: "exp") == nil {
+            return false
+        }
+        let exp_str = KeychainWrapper.standard.string(forKey: "exp")!
+        return ISO8601DateFormatter().date(from: exp_str)! < Date.now
     }
     
     func getToken() -> String? {

@@ -9,7 +9,6 @@ import Foundation
 
 
 class LoginModel: ObservableObject {
-    @Published var path = [Int]()
     @Published var errorMsg = ""
     let authService: AuthService
     
@@ -22,7 +21,7 @@ class LoginModel: ObservableObject {
             errorMsg = ""
             let loginResponse = try await authService.login(LoginRequest(email: email,
                                                                          password: password))
-            Auth.shared.setToken(token: loginResponse.token)
+            Auth.shared.setToken(token: loginResponse.token, exp: loginResponse.exp)
         } catch {
             errorMsg = "\(error)"
         }
@@ -39,7 +38,6 @@ class LoginModel: ObservableObject {
             }
             
             try await authService.signup(signupRequest)
-            path = []
         } catch {
             errorMsg = "\(error)"
         }

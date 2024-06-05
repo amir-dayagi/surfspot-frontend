@@ -13,26 +13,58 @@ struct LoginView: View {
     @State var email = ""
     @State var password = ""
     
+    var isLoginButtonDisabled: Bool {
+        [email, password].contains(where: \.isEmpty)
+    }
+    
     var body: some View {
-        NavigationStack(path: $loginModel.path) {
-            Form {
-                TextField("Email", text: $email)
-                SecureField("Password", text: $password)
+        NavigationStack() {
+            VStack(alignment: .leading, spacing: 15) {
+                Spacer()
+                
+                Text("Surfspot")
+                    .frame(maxWidth: .infinity)
+                    .font(.title)
+                    .bold()
+                
+                Spacer()
                 
                 if loginModel.errorMsg != "" {
                     Text(loginModel.errorMsg)
                 }
                 
-                Button("Login") {
-                    Task {
-                        await loginModel.login(email, password)
-                    }
-                }
+                TextField("Email", text: $email)
+                    .padding(10)
+                    .padding(.horizontal)
                 
-                Text("Don't have an account?")
+                SecureField("Password", text: $password)
+                    .padding(10)
+                    .padding(.horizontal)
+                
                 NavigationLink("Create an account") {
                     SignupView()
                 }
+                    .padding(10)
+                    .padding(.horizontal)
+                
+                Spacer()
+                
+                Button {
+                    Task {
+                        await loginModel.login(email, password)
+                    }
+                } label: {
+                    Text("Login")
+                        .font(.title2)
+                        .bold()
+                        .foregroundStyle(.white)
+                }
+                .frame(height: 50)
+                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                .background(isLoginButtonDisabled ? .gray : .blue)
+                .cornerRadius(20)
+                .disabled(isLoginButtonDisabled)
+                .padding()
             }
         }
     }

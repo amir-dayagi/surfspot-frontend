@@ -13,26 +13,37 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack {
-            HStack {
-                Button("Logout") {
-                    auth.logout()
+            ScrollView {
+                VStack (alignment: .leading, spacing: 15) {
+                    ForEach(homeModel.sessions, id: \.self) { session in
+                        NavigationLink {
+                            SessionView(session: session)
+                        } label: {
+                            SessionListItem(session: session)
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                    }
                 }
-                
-                Spacer()
-                
-                NavigationLink {
-                    CreateSessionView()
-                } label: {
-                    Image(systemName: "plus")
-                }
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
-            
-            List() {
-                ForEach(homeModel.sessions, id: \.self) { session in
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Logout") {
+                        auth.logout()
+                    }
+                }
+                
+                ToolbarItem(placement: .principal) {
+                    Text("Surfspot")
+                        .bold()
+                }
+                
+                ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink {
-                        SessionView(session: session)
+                        CreateSessionView()
                     } label: {
-                        Text(session.name)
+                        Image(systemName: "plus")
                     }
                 }
             }

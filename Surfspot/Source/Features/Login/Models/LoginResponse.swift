@@ -10,5 +10,6 @@ import Foundation
 
 struct LoginResponse: Decodable {
     var token: String
+    var exp: String
 }
 
